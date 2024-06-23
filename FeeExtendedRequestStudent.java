@@ -1,5 +1,22 @@
 public class FeeExtendedRequestStudent {
     private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public FeeExtendedRequest getFer() {
+        return fer;
+    }
+
+    public void setFer(FeeExtendedRequest fer) {
+        this.fer = fer;
+    }
+
     private FeeExtendedRequest fer;
 
     public FeeExtendedRequestStudent(int id, FeeExtendedRequest fer){

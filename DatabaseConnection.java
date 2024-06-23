@@ -17,25 +17,25 @@ public class DatabaseConnection {
     }
 
     public boolean setFeeComplete(FeeCompletedRequestStudent fcrs){
-        System.out.println("Add fee-completed request student successfully: "+ fcrs.toString());
+        System.out.println("Add fee-completed request student successfully: "+ fcrs.getId() +" - "+ fcrs.getSt().getSid()+ " "+ fcrs.getSt().getName()+ " - "+fcrs.getFee());
         boolean rs = true;
         return rs;
     }
 
     public boolean setFE_Request(FeeExtendedRequestStudent fers){
-        System.out.println("Add fee-extended request student successfully: "+ fers.toString());
+        System.out.println("Add fee-extended request student successfully: "+ fers.getId()+" - "+ fers.getFer().getId()+" "+fers.getFer().getExtendToDate());
         boolean rs = true;
         return rs;
     }
 
     public boolean setTuitionFee(TuitionStudent ts){
-        System.out.println("Add tuition request student successfully: "+ ts.toString());
+        System.out.println("Add tuition request student successfully: "+ ts.getSt().toString() + " - "+ts.getFee());
         boolean rs = true;
         return rs;
     }
 
     public boolean setPayment(Payment pm){
-        System.out.println("Add tuition request student successfully: "+ pm.toString());
+        System.out.println("Add tuition request student successfully: "+ pm.getSt().toString() + " - "+pm.getFee());
         boolean rs = true;
         return rs;
     }
