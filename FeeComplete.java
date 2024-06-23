@@ -1,4 +1,4 @@
-public class FeeCompletedRequestStudent {
+public class FeeComplete {
     private int id;
     private Student st;
 
@@ -28,13 +28,13 @@ public class FeeCompletedRequestStudent {
 
     private Double fee;
 
-    public FeeCompletedRequestStudent(int id, Student st, Double fee){
+    public FeeComplete(int id, Student st, Double fee){
         this.id = id;
         this.st = st;
         this.fee = fee;
     }
 
-    public boolean addNewFeeComplete(FeeCompletedRequestStudent fcrs){
+    public boolean addNewFeeComplete(FeeComplete fcrs){
         DatabaseConnection db = new DatabaseConnection();
         if(db.setFeeComplete(fcrs)){
             return true;

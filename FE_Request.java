@@ -1,4 +1,4 @@
-public class FeeExtendedRequestStudent {
+public class FE_Request {
     private int id;
 
     public int getId() {
@@ -19,11 +19,11 @@ public class FeeExtendedRequestStudent {
 
     private FeeExtendedRequest fer;
 
-    public FeeExtendedRequestStudent(int id, FeeExtendedRequest fer){
+    public FE_Request(int id, FeeExtendedRequest fer){
         this.id = id;
         this.fer = fer ;
     }
-    public boolean addNewFE_Request(FeeExtendedRequestStudent fers ){
+    public boolean addNewFE_Request(FE_Request fers ){
         DatabaseConnection db = new DatabaseConnection();
         if(db.setFE_Request(fers)){
             return true;

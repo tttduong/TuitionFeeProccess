@@ -16,13 +16,13 @@ public class DatabaseConnection {
         return rs;
     }
 
-    public boolean setFeeComplete(FeeCompletedRequestStudent fcrs){
+    public boolean setFeeComplete(FeeComplete fcrs){
         System.out.println("Add fee-completed request student successfully: "+ fcrs.getId() +" - "+ fcrs.getSt().getSid()+ " "+ fcrs.getSt().getName()+ " - "+fcrs.getFee());
         boolean rs = true;
         return rs;
     }
 
-    public boolean setFE_Request(FeeExtendedRequestStudent fers){
+    public boolean setFE_Request(FE_Request fers){
         System.out.println("Add fee-extended request student successfully: "+ fers.getId()+" - "+ fers.getFer().getId()+" "+fers.getFer().getExtendToDate());
         boolean rs = true;
         return rs;

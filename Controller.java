@@ -24,7 +24,7 @@ public class Controller {
     }
 
     public boolean sendFeeComplete(int id, Student st, double fee){
-        FeeCompletedRequestStudent fcrs = new FeeCompletedRequestStudent(id, st, fee);
+        FeeComplete fcrs = new FeeComplete(id, st, fee);
         if(fcrs.addNewFeeComplete(fcrs)) {
             return true;
         }else{
@@ -33,7 +33,7 @@ public class Controller {
     }
 
     public boolean sendFE_Request(int id, FeeExtendedRequest fer){
-        FeeExtendedRequestStudent fcrs = new FeeExtendedRequestStudent(id, fer);
+        FE_Request fcrs = new FE_Request(id, fer);
         if(fcrs.addNewFE_Request(fcrs)) {
             return true;
         }else{
